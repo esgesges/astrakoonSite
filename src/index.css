@@ -1,0 +1,53 @@
+:root {
+  --ink: #151713;
+  --white: #f5f6f0;
+  --lime: #c5f36a;
+  --paper: #f4f5ef;
+  --muted: #686b61;
+  --line: #dfe1d8;
+  --display: "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --sans: Inter, "Helvetica Neue", Arial, sans-serif;
+  --mono: "SFMono-Regular", Consolas, monospace;
+
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--lime);
+  outline-offset: 4px;
+}
+
+::selection {
+  background: var(--lime);
+  color: var(--ink);
+}
